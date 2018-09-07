@@ -97,12 +97,6 @@
 		#contact{
 			background-color:rgba(255, 144, 0, 0.9);
 		}
-		#contact p{
-			font-size: 25px;
-			font-weight: bold;
-			position: relative;
-			margin: 50px auto;
-		}
 		.about{
 			width: 150px;
 			height: 150px;
@@ -210,6 +204,15 @@
 		}
 		.works-list{
 		position: relative;
+		}
+		.e p{
+			font-family: "圆体";
+			color: white;
+			margin-bottom: 5px;
+			font-size: 30px;
+			font-weight: bold;
+			position: relative;
+			margin: 15px auto;
 		}
     </style>
 </head>
@@ -351,8 +354,11 @@
             <div class="swiper-slide e" style="height: 943px; margin-bottom: 30px;">
             	<div class='wrap_item'id="contact">
 			<h1>Contact me</h1>
-			<p>联系电话：110</p>
-			<p>联系qq：1111111</p>
+			<p class="letter-wrap" data-stagger="-0.065">联系电话：110</p>
+			<br>
+			<p class="letter-wrap" data-stagger="-0.065">联系qq：1111111</p>
+			<br>
+			<p class="letter-wrap" data-stagger="-0.065">邮箱：11111111@qq.com</p>
 				</div>
             </div>
 
@@ -376,35 +382,35 @@
 
     new WOW().init();
     $(".works-item").eq(0).mouseover(function(event) {
-    		$(".works-item").eq(0).addClass('animated pulse infinite');
-
+    		$(".works-item").eq(0).addClass('animated pulse ');
+// infinite
     }); 
     $(".works-item").eq(1).mouseover(function(event) {
-    		$(".works-item").eq(1).addClass('animated bounce infinite');
+    		$(".works-item").eq(1).addClass('animated bounce ');
 
     });
      $(".works-item").eq(2).mouseover(function(event) {
-    		$(".works-item").eq(2).addClass('animated swing infinite');
+    		$(".works-item").eq(2).addClass('animated swing ');
 
     });
       $(".works-item").eq(3).mouseover(function(event) {
-    		$(".works-item").eq(3).addClass('animated tada infinite');
+    		$(".works-item").eq(3).addClass('animated tada ');
 
     });
       $(".works-item").eq(0).mouseout(function(event) {
-    		$(".works-item").eq(0).removeClass('animated pulse infinite');
+    		$(".works-item").eq(0).removeClass('animated pulse ');
     		
     }); 
     $(".works-item").eq(1).mouseout(function(event) {
-    		$(".works-item").eq(1).removeClass('animated bounce infinite');
+    		$(".works-item").eq(1).removeClass('animated bounce ');
 
     });
      $(".works-item").eq(2).mouseout(function(event) {
-    		$(".works-item").eq(2).removeClass('animated swing infinite');
+    		$(".works-item").eq(2).removeClass('animated swing ');
 
     });
       $(".works-item").eq(3).mouseout(function(event) {
-    		$(".works-item").eq(3).removeClass('animated tada infinite');
+    		$(".works-item").eq(3).removeClass('animated tada ');
 
     });
     var swiper = new Swiper('.swiper-container', {
