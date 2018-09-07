@@ -43,11 +43,11 @@
 		}
 		.nav-item{
 			font-weight: bold;
-			font-size: 27px;
+			font-size: 32px;
 			margin-top: 30px;
 			color: white;
 			float: left;
-			margin-left: 15px;
+			margin-left: 5px;
 		}
    		 .swiper-container {
         width: 100%;
@@ -96,6 +96,10 @@
 		}
 		#contact{
 			background-color:rgba(255, 144, 0, 0.9);
+			box-shadow: 10px 10px 5px #deea52;
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
 		}
 		.about{
 			width: 150px;
@@ -144,7 +148,7 @@
 			left: -700px;
 		}
 		#contact h1{
-			top: -150px;
+			top: -50px;
 		}
 		h2 {
   		font-size: var(--h2-fs);
@@ -381,6 +385,8 @@
     <script>
 
     new WOW().init();
+    $("#contact").mouseover(function(event) {
+        $("#contact").eq(0).addClass('animated pulse ');});
     $(".works-item").eq(0).mouseover(function(event) {
     		$(".works-item").eq(0).addClass('animated pulse ');
 // infinite
